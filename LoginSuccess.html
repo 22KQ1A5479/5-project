@@ -1,0 +1,49 @@
+<html>
+ <head>
+     <title>Login Form</title>
+    <style>
+        body{
+            background-image: url(tu.jpg);
+            background-size: 1700px 810px;
+        }
+    </style>
+ </head>
+ <body>
+    <center>
+
+    <font color="black">
+        <script>
+            // User Validations
+    function loginValidation() {
+                // Ramesh
+      var uname = document.myform.username.value;
+                 //Ramesh@123
+      var password = document.myform.password.value;
+                if(uname==null || uname=="") {
+                  alert("Name cant be blank")
+                  return false;  
+               } else if (password.length<6){
+                  alert("Password Must be 6 letters")
+                  return false;
+               }  
+               return true                 
+            }           
+         </script>
+     </head>
+     <body>
+         <h1>Login Page</h1>  
+<form name="myform" action="LoginSuccessfull.html" 	onsubmit="return loginValidation(this)">
+
+User Name : <input type="text" name="username"> <br>
+Password :  <input type="password" name="password"> <br>
+        <input type="submit" value="Submit">    
+      
+         
+       </form>
+    
+     
+    </form>
+    </center>
+</center>
+</body>
+</html>            

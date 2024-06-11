@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        .b{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+#video {
+    position: relative;
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+}   
+#vid{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+object-fit: cover;
+}
+</style>
+<body>
+    <section id ="video">
+        <video id ="vid"autoplay loop muted controls>
+            <source type="video/mp4" src="openlib.mp4">
+            </video>
+            </section>
+</body>
+</html>
